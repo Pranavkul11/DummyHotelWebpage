@@ -1,65 +1,60 @@
 <!DOCTYPE html>
 <html lang="en"> 
 
-<head> 
+<head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Five-Star Hotel Welcome</title>
+    <style>
+        .img_deg {
+            float: right;
+        }
+        h1 {
+            text-align: center;
+        }
+    </style>
 </head>
 
 <body>
     <div class="welcome-container">
         <header>
-            <h1> <font face="Copperplate Gothic Light"> The Premium Sub-Urban </font> </h1> <br> <br>
-            <h2> Address- ' Flint Intersection ' opposite to Richman Avenue, Latur- 413512 </h2>
-            <h3> Contact No- 9373581616 / 9322756528 </h3>
-            
-        </header>  
-       <div class="menu-icon"> <b> &#9776; Let's Check Our Amazing Varieties </b> </div>
-       <img src="https://geethamveg.com/assets/images/menu/snacks.png" height="900" width="1150">
+            <h1 style="font-family: 'Copperplate Gothic Light';">The Premium Sub-Urban</h1>
+            <h2>Address: 'Flint Intersection' opposite to Richman Avenue, Latur- 413512</h2>
+            <h3>Contact No: 9373581616 / 9322756528</h3>
+        </header>
+        <div class="menu-icon"><b>&#9776; Let's Check Our Amazing Varieties</b></div>
+        <img src="https://geethamveg.com/assets/images/menu/snacks.png" height="900" width="1150">
 
-    <title>5-Star Pure Veg Hotel Registration</title>
-<style type="text/css">
-.img_deg
-{
-float: right;
-}
-</style>
-</head>
-<body> <br> <br>
-<img class="img_deg" src="https://img.freepik.com/free-photo/interior-modern-comfortable-hotel-room_1232-1822.jpg?semt=ais_hybrid&w=740" height="600" width="750"> 
+        <img class="img_deg" src="https://img.freepik.com/free-photo/interior-modern-comfortable-hotel-room_1232-1822.jpg?semt=ais_hybrid&w=740" height="600" width="750">
 
-    <h1> <font face="Britannic Bold"> Lodging (AC / Non AC) </font> </h1>
-    <form action="reservation_process.php" method="POST">
+        <h1 style="font-family: 'Britannic Bold';">Lodging (AC / Non AC)</h1>
+        <form action="reservation_process.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
 
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required><br><br>    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required><br><br>
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required><br><br>
 
-        <label for="phone">Phone:</label>
-        <input type="tel" id="phone" name="phone" required><br><br>
+            <label for="check-in">Check-In Date:</label>
+            <input type="date" id="check-in" name="check-in" required><br><br>
 
-        <label for="check-in">Check-In Date:</label>
-        <input type="date" id="check-in" name="check-in" required><br><br>
+            <label for="check-out">Check-Out Date:</label>
+            <input type="date" id="check-out" name="check-out" required><br><br>
 
-        <label for="check-out">Check-Out Date:</label>
-        <input type="date" id="check-out" name="check-out" required><br><br>
+            <label for="rooms">Number of Rooms:</label>
+            <input type="number" id="rooms" name="rooms" required><br><br>
 
-        <label for="rooms">Number of Rooms:</label>
-        <input type="number" id="rooms" name="rooms" required><br><br>
+            <label for="special-requests">Special Requests:</label><br>
+            <textarea id="special-requests" name="special-requests" rows="4" cols="50"></textarea><br><br>
 
-        <label for="special-requests">Special Requests:</label><br>
-        <textarea id="special-requests" name="special-requests" rows="4" cols="50"></textarea><br><br>
+            <input type="submit" value="Submit Reservation">
+        </form>
 
-        <input type="submit" value="Submit Reservation"> <br> <br>
-        <label for="Valuable Feedback"> Valuable Feedback:</label><br>
-        <textarea id="special-requests" name="special-requests" rows="4" cols="50"></textarea><br><br>
-    </form>
- <input type="button" value="Submit"/> <br> <br>
-<h1 align="centre"> <i> Thank You Visit Again...! </i> </h1> 
-
+        <h1 style="text-align: center;"><i>Thank You Visit Again...!</i></h1>
+    </div>
 </body>
 </html>
